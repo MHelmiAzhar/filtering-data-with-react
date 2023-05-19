@@ -1,5 +1,5 @@
 import Navigation from "../component/Navigation";
-
+import React from "react";
 import Footer from "../component/Footer";
 import { Container, Col, Row, Card, Button, Accordion } from "react-bootstrap";
 import {
@@ -11,7 +11,6 @@ import {
   iconProfessional,
   imgCar,
   foto1,
-  foto2,
   rate,
 } from "../assets";
 // import "owl.carousel/dist/assets/owl.carousel.min.css";

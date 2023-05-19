@@ -1,3 +1,4 @@
+import React from "react";
 import Navigation from "../component/Navigation";
 
 import Footer from "../component/Footer";
@@ -36,7 +37,7 @@ const Cars = () => {
             return car.available === true;
           }
         })
-        .filter((car) => car.capacity == capacity)
+        .filter((car) => car.capacity >= capacity)
     : data.filter((car) => {
         if (typedriver !== "true") {
           return car.available === false;
@@ -82,7 +83,7 @@ const Cars = () => {
                 Pilih Tipe Driver
               </option>
               <option value={true}>Dengan Sopir</option>
-              <option value={false}>Tanpa Sopir</option>
+              <option value={false}>Tanpa Sopir (Lepas Kunci)</option>
             </Form.Select>
           </Col>
           <Col>
@@ -117,33 +118,30 @@ const Cars = () => {
               onChange={(e) => setCapacity(e.target.value)}
             />
           </Col>
-          <Col lg={2}>
-            <Button
-              className="border-0 "
-              style={{
-                backgroundColor: "#5CB85F",
-                marginTop: "20px",
-                width: "100%",
-              }}
-            >
-              Cari Mobil
-            </Button>
-          </Col>
         </Row>
       </div>
       <div
         className="container-fluid"
         style={{ padding: "0px 10% 100px 10% " }}
       >
-        <Row>
+        <Row className="">
           {typedriver === ""
             ? data.map((car) => (
                 <Col key={car.id}>
                   <div
                     className="card mb-3"
-                    style={{ width: "333px", height: "586px" }}
+                    style={{ width: "357px", height: "580px" }}
                   >
-                    <img src={mercy} className="card-img-top" alt="..." />
+                    <img
+                      src={car.image.replace("./", "")}
+                      className="card-img-top"
+                      alt="..."
+                      style={{
+                        objectFit: "cover",
+                        width: "355.59px",
+                        height: "222px",
+                      }}
+                    />
                     <div className="card-body" style={{ height: "100%" }}>
                       <p className="text-car-tittle">
                         {car.manufacture}/ {car.model}
@@ -162,10 +160,9 @@ const Cars = () => {
                         </li>
                       </ul>
                       <Button
-                        className="border-0 align-bottom"
+                        className="border-0   align-items-end"
                         style={{
                           backgroundColor: "#5CB85F",
-                          marginTop: "50px",
                           width: "100%",
                         }}
                         href="/cars"
@@ -177,7 +174,7 @@ const Cars = () => {
                 </Col>
               ))
             : filteredData.map((car) => (
-                <Col key={car.id}>
+                <Col key={car.id} className="align-items-center">
                   <div
                     className="card mb-3"
                     style={{ width: "333px", height: "586px" }}
