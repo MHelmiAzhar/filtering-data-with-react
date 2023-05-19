@@ -196,7 +196,10 @@ const Home = () => {
         <div>
           <Slider {...settings}>
             <div>
-              <div className="card mb-3" style={{ maxWidth: "619px" }}>
+              <div
+                className="card mb-3 border-0"
+                style={{ maxWidth: "619px", backgroundColor: "#F1F3FF" }}
+              >
                 <div className="row g-0">
                   <div className="col-md-4 d-flex align-items-center justify-content-center">
                     <img
@@ -227,7 +230,10 @@ const Home = () => {
             </div>
 
             <div>
-              <div className="card mb-3" style={{ maxWidth: "619px" }}>
+              <div
+                className="card mb-3 border-0"
+                style={{ maxWidth: "619px", backgroundColor: "#F1F3FF" }}
+              >
                 <div className="row g-0">
                   <div className="col-md-4 d-flex align-items-center justify-content-center">
                     <img
@@ -258,7 +264,10 @@ const Home = () => {
             </div>
 
             <div>
-              <div className="card mb-3" style={{ maxWidth: "619px" }}>
+              <div
+                className="card mb-3 border-0"
+                style={{ maxWidth: "619px", backgroundColor: "#F1F3FF" }}
+              >
                 <div className="row g-0">
                   <div className="col-md-4 d-flex align-items-center justify-content-center">
                     <img
