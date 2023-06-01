@@ -9,7 +9,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cars" element={<Cars />} />
+          <Route
+            path="https://cari-rental-mobil.netlify.app/cars"
+            element={<Cars />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
