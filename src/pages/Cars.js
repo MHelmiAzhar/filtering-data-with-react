@@ -3,7 +3,7 @@ import Navigation from "../component/Navigation";
 
 import Footer from "../component/Footer";
 import { Row, Col, Form, Button } from "react-bootstrap";
-import { mercy, users, setting, calendar, imgCar } from "../assets";
+import { users, setting, calendar, imgCar } from "../assets";
 
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -179,7 +179,16 @@ const Cars = () => {
                     className="card mb-3"
                     style={{ width: "333px", height: "586px" }}
                   >
-                    <img src={mercy} className="card-img-top" alt="..." />
+                    <img
+                      src={car.image.replace("./", "")}
+                      className="card-img-top"
+                      alt="..."
+                      style={{
+                        objectFit: "cover",
+                        width: "355.59px",
+                        height: "222px",
+                      }}
+                    />
                     <div className="card-body" style={{ height: "100%" }}>
                       <p className="text-car-tittle">
                         {car.manufacture}/ {car.model}
