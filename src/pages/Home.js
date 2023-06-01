@@ -13,9 +13,6 @@ import {
   foto1,
   rate,
 } from "../assets";
-// import "owl.carousel/dist/assets/owl.carousel.min.css";
-// import "owl.carousel/dist/assets/owl.theme.default.min.css";
-// import OwlCarousel from "react-owl-carousel";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

@@ -212,57 +212,6 @@ const Cars = () => {
                   </div>
                 </Col>
               ))}
-
-          {/* { typedriver !== "" ||
-            (capacity !== "" ?
-              data
-                .filter((car) => {
-                  if (typedriver !== "true") {
-                    return car.available === false;
-                  } else {
-                    return car.available === true;
-                  }
-                })
-                .filter((car) => car.capacity == capacity)
-                .map((car) => (
-                  <Col key={car.id}>
-                    <div
-                      className="card mb-3"
-                      style={{ width: "333px", height: "586px" }}
-                    >
-                      <img src={mercy} className="card-img-top" alt="..." />
-                      <div className="card-body" style={{ height: "100%" }}>
-                        <p className="text-car-tittle">
-                          {car.manufacture}/ {car.model}
-                        </p>
-                        <p className="text-card">Rp {car.rentPerDay}/hari</p>
-                        <p className="text-description">{car.description}</p>
-                        <ul className="list-unstyled text-description">
-                          <li className="mb-3">
-                            <img src={users} /> {car.capacity}
-                          </li>
-                          <li className="mb-3">
-                            <img src={setting} /> {car.transmission}
-                          </li>
-                          <li className="mb-3">
-                            <img src={calendar} /> {car.year}
-                          </li>
-                        </ul>
-                        <Button
-                          className="border-0 align-bottom"
-                          style={{
-                            backgroundColor: "#5CB85F",
-                            marginTop: "50px",
-                            width: "100%",
-                          }}
-                          href="/cars"
-                        >
-                          Pilih Mobil
-                        </Button>
-                      </div>
-                    </div>
-                  </Col>
-                )))} */}
         </Row>
       </div>
       ;

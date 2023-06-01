@@ -1,9 +1,9 @@
-import { Button } from "react-bootstrap";
+import React from "react";
 import { Logo } from "../assets/index.js";
 import "../index.css";
-import ButtonComponent from "./ButtonComponent.js";
+import { Button } from "react-bootstrap";
 
-function Navigation(props) {
+function Navigation() {
   return (
     <nav className=" navigation navbar navbar-expand-lg ">
       <div className="container-fluid container">
@@ -24,7 +24,13 @@ function Navigation(props) {
             <a className="nav-link text-dark" href="#faq">
               FAQ
             </a>
-            <ButtonComponent text="Register" />
+            <Button
+              className="border-0"
+              style={{ backgroundColor: "#5CB85F" }}
+              href="/cars"
+            >
+              Register
+            </Button>
           </div>
         </div>
       </div>
