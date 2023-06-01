@@ -45,7 +45,7 @@ const Home = () => {
             <Button
               className="border-0"
               style={{ backgroundColor: "#5CB85F" }}
-              href="/cars"
+              href="https://cari-rental-mobil.netlify.app/cars"
             >
               Mulai sewa Mobil
             </Button>
